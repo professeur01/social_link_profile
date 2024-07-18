@@ -1,0 +1,82 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/Assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body {
+    font-family: Inter;
+    background-color: hsl(0, 0%, 8%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 14px;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    color: hsl(0, 0%, 70%);
+}
+
+button {
+    width: 19em;
+    padding: 9px 0;
+    border-radius: 7px;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+
+@media screen and (max-width: 380px) {
+    .card {
+        width: 300px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
